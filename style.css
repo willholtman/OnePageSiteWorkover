@@ -23,6 +23,22 @@ body{
     justify-content: space-between;
 }
 
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+} 
+
 /* Topo do site */
 #topo{
     position: fixed;
@@ -48,7 +64,10 @@ header {
 
 label {
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -77,28 +96,107 @@ nav ul li a {
     color: #fff;
 }
 
+/* Destaque */
+main {
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 { 
+    font-size: 1.5em;
+    margin: 20px 0px 50px 0px;
+}
+
+/* Sobre */
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueSobre {
+    display: none;
+}
+
+#textoSobre {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoSobre h2 {
+    margin-bottom: 10px;
+}
+
+.topicosSobre {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.topicosSobre img {
+    margin-right: 10px;
+}
+
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (min-width: 576px){
+    /* Layout */
     .Container {
         max-width: 540px;
+    }
+
+    /* Destaque */
+    main h1, main h2 {
+        text-shadow: #000 0.05em 0.05em 0.05em;
     }
 }
 
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */ 
 @media (min-width: 768px){
+    /* Layout */
     .Container {
         max-width: 720px;
+    }
+
+    /* Destaque */
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 5.5em;
+    }
+
+    main h2 {
+        font-size: 2em;
     }
 }
 
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px){
+    /* Layout */
     .Container {
         max-width: 960px;
+    }
+
+    /* Destaque */
+    main {
+        height: 70vh;
+
     }
 }
 
@@ -142,5 +240,19 @@ nav ul li a {
 
     nav ul li a:hover {
         color: #c00000;
+    }
+
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%;
+        margin-right: 50px;
     }
 }
