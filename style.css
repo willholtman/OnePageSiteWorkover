@@ -28,6 +28,11 @@ body{
     align-items: center;
 }
 
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -148,6 +153,53 @@ main h2 {
     margin-right: 10px;
 }
 
+/* One page */
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
+}
+
+/* Wireframe */
+#wireframe {
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2 {
+    margin-bottom: 10px;
+}
+
+#textoWire p {
+    margin-bottom: 40px;
+}
+
+#textoWire span {
+    display: none;
+}
+
+#qrcode {
+    display: none;
+}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -160,6 +212,12 @@ main h2 {
     /* Destaque */
     main h1, main h2 {
         text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    /* One page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -254,5 +312,29 @@ main h2 {
     #destaqueSobre img {
         border-radius: 50%;
         margin-right: 50px;
+    }
+
+    /* One page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Wireframe */
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 225px;
+        height: 225px;
     }
 }
