@@ -1,3 +1,7 @@
+![GitHub](https://img.shields.io/github/license/willholtman/OnePageSiteWorkover)
+![GitHub repo size](https://img.shields.io/github/repo-size/willholtman/OnePageSiteWorkover)
+![GitHub top language](https://img.shields.io/github/languages/top/willholtman/OnePageSiteWorkover)
+
 # SiteOnePageWorkover
 Projeto desenvolvido em curso da plataforma Workover, com foco em HTML5, CSS3 e técnicas de SEO.
 O curso faz parte do Programa de Capacitação e Residência em Tecnologia da Informação e Comunicação – Programa TrendsIT Capacitação & Residência.
